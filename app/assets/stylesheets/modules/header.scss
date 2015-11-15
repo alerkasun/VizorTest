@@ -1,0 +1,39 @@
+.header {
+  height: $header-height;
+  line-height: $header-height;
+  background-color: $header-bg;
+  color: rgba(white, 0.8);
+  a {
+    color: rgb(88, 179, 204);
+    &:hover {
+      color: rgba(white, 0.8);
+    }
+  }
+  &-icon-link {
+    font-size: 200%;
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    padding: 0 $gutter / 5;
+  }
+  &-link {
+    display: block;
+    float: left;
+    padding: 0 $gutter / 2;
+    height: $header-height;
+    background: rgba(white, 0.15);
+    color: rgba(white, 0.9)!important;
+    &:hover {
+      color: white!important;
+    }
+    &:first-child {
+      border-right: 1px solid rgba(white, 0.5);
+    }
+    > span {
+      font-size: 150%;
+      margin-right: 0.8rem;
+      vertical-align: middle;
+      margin-top: -0.4rem;
+    }
+  }
+}

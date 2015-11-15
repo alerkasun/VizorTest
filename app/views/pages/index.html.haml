@@ -1,0 +1,102 @@
+.clearfix
+  %section.clearfix
+    .bg-fixed(style="background-image: url('#{asset_url('picture.png')}')")
+      .container
+        .tbl
+          .tbl-cell.cell-4.align-middle.bg-light-white
+            .gutter-horizontal.gutter-vertical
+              .clearfix.text-center
+                = icon :bag, class: 'color-blue head-lg'
+              .text-line
+                =Faker::Lorem.paragraph(2)
+              .clearfix.text-center
+                = icon :laptop, class: 'color-red head-lg'
+              .text-line
+                =Faker::Lorem.paragraph(3)
+              .text-line
+                %button.btn.btn-primary.btn-block
+                  .font-light.text-md.color-midwhite
+                    Free Trial
+          .tbl-cell.cell-8
+
+  %section.bg-blue
+    .container
+      .tbl
+        .tbl-cell.cell-4.align-middle.bg-light-white.gutter-horizontal.gutter-vertical
+          %button.btn.btn-default.btn-block
+            .font-light.text-md
+              Get Pricing
+        .tbl-cell.cell-8.gutter-horizontal.align-middle.gutter-vertical
+          .gutter-left
+            .upcase.color-midwhite.text-lg.font-light
+              =Faker::Lorem.words(14).join(" ")
+  %section.clearfix
+    .container
+      = render "info"
+  %section.bg-gray
+    .container
+      .gutter-vertical-2x
+        .col-xs-3.gutter-vertical-sm
+          - 6.times do
+            .gutter-vertical-xs.text-center
+              .upcase.color-dim.smile.text-left
+                .text-md=Faker::Lorem.words(2).join(" ")
+
+        .col-xs-3.bg-white.text-center
+          .smile.align-middle
+            = icon :terminal_box, class: "color-blue head-sm"
+          .smile.align-middle
+            .font-semi.color-blue=Faker::Lorem.word.titleize
+            %i.text-sm=Faker::Lorem.word.titleize
+          .gutter-vertical-xs
+            = rand(12)
+          .gutter-vertical-xs
+            = icon [:close, :check].sample
+          .gutter-vertical-xs
+            = icon [:close, :check].sample
+          .gutter-vertical-xs
+            = rand(12)
+          .gutter-vertical-xs
+            = rand(12)
+            days
+          .gutter-vertical-xs
+            = icon [:close, :check].sample
+        .col-xs-3.bg-white.text-center
+          .smile.align-middle
+            = icon :terminal_box, class: "color-blue head-sm"
+          .smile.align-middle
+            .font-semi.color-blue=Faker::Lorem.word.titleize
+            %i.text-sm=Faker::Lorem.word.titleize
+          .gutter-vertical-xs
+            = rand(12)
+          .gutter-vertical-xs
+            = icon [:close, :check].sample
+          .gutter-vertical-xs
+            = icon [:close, :check].sample
+          .gutter-vertical-xs
+            = rand(12)
+          .gutter-vertical-xs
+            = rand(12)
+            days
+          .gutter-vertical-xs
+            = icon [:close, :check].sample
+        .col-xs-3.bg-white.text-center
+          .smile.align-middle
+            = icon :terminal_box, class: "color-blue head-sm"
+          .smile.align-middle
+            .font-semi.color-blue=Faker::Lorem.word.titleize
+            %i.text-sm=Faker::Lorem.word.titleize
+          .gutter-vertical-xs
+            = rand(12)
+          .gutter-vertical-xs
+            = icon [:close, :check].sample
+          .gutter-vertical-xs
+            = icon [:close, :check].sample
+          .gutter-vertical-xs
+            = rand(12)
+          .gutter-vertical-xs
+            = rand(12)
+            days
+          .gutter-vertical-xs
+            = icon [:close, :check].sample
+

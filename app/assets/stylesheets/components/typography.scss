@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+.align {
+  @each $align in (middle, top, bottom, baseline){
+    &-#{$align}{
+      vertical-align: $align;
+    }
+  }
+}
+.nospace {
+  margin: 0;
+  padding: 0;
+}
+.font {
+  @each $font-weight in $font-weights {
+    &-#{nth($font-weight, 1)}{
+      font-weight: nth($font-weight, 2);
+    }
+  }
+}
+@each $preset in $typo-presets {
+  .#{$preset} {
+    @each $step in $typo-steps {
+      $typo-start: $typo-start + 0.15;
+      &-#{$step}{
+        font-size: $typo-start;
+      }
+    }
+  }
+  $typo-start: $typo-start + 0.75;
+}
+.color {
+  @each $color in $text-colors {
+    &-#{nth($color, 1)}{
+      color: nth($color, 2);
+    }
+  }
+}
+.upcase {
+  text-transform: uppercase;
+}

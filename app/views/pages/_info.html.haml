@@ -1,0 +1,68 @@
+.gutter-vertical-2x
+  .col-xs-6
+    .text-line
+      .tbl
+        .tbl-cell.align-middle.box-7em
+          .text-lg
+            = icon :hierarchy, class: "title-lg color-blue"
+        .tbl-cell.align-middle
+          .color-blue.text-lg
+            = Faker::Lorem.words(8).map{|e| e.titleize }.join(" ")
+    .text-line
+      = Faker::Lorem.paragraph(3)
+
+    .text-line
+      .tbl
+        .tbl-cell.align-middle
+          .color-blue.text-lg
+            = Faker::Lorem.words(8).map{|e| e.titleize }.join(" ")
+        .tbl-cell.align-middle.cell-3
+          .text-lg
+            = icon :stats_dots, class: "title-lg color-blue"
+    .text-line
+      = Faker::Lorem.paragraph(3)
+
+    .text-line
+      .tbl
+        .tbl-cell.align-middle.box-7em
+          .text-lg
+            = icon :lamp, class: "title-lg color-blue"
+        .tbl-cell.align-middle
+          .color-blue.text-lg
+            = Faker::Lorem.words(8).map{|e| e.titleize }.join(" ")
+    .text-line
+      = Faker::Lorem.paragraph(3)
+  .col-xs-6
+    .text-line
+      .tbl
+        .tbl-cell.align-middle.box-7em
+          .text-lg
+            = icon :lock2, class: "title-lg color-red"
+        .tbl-cell.align-middle
+          .color-red.text-lg
+            = Faker::Lorem.words(8).map{|e| e.titleize }.join(" ")
+    .text-line
+      = Faker::Lorem.paragraph(3)
+
+    .text-line
+      .tbl
+        .tbl-cell.align-middle
+          .color-red.text-lg
+            = Faker::Lorem.words(8).map{|e| e.titleize }.join(" ")
+        .tbl-cell.align-middle.cell-3
+          .text-lg
+            = icon :umbrella, class: "title-lg color-red"
+    .text-line
+      = Faker::Lorem.paragraph(3)
+
+    .text-line
+      .tbl
+        .tbl-cell.align-middle.box-7em
+          .text-lg
+            .text-sm
+              = icon :expand, class: "title-lg color-red"
+        .tbl-cell.align-middle
+          .color-red.text-lg
+            = Faker::Lorem.words(8).map{|e| e.titleize }.join(" ")
+    .text-line
+      = Faker::Lorem.paragraph(3)

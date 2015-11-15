@@ -1,0 +1,22 @@
+.block-4em {
+  width: 4em;
+}
+@for $i from 1 to 13 {
+  .col-#{$i}{
+    display: block;
+    float: left;
+    width: percentage($i / 12);
+    position: relative;
+  }
+}
+.cover {
+  position: absolute;
+  @each $side in $sides-common {
+    #{$side}: 0; 
+  }
+}
+.box {
+  &-7em {
+    width: 7em;
+  }
+}

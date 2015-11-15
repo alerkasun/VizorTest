@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Landing
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %header.header
+      .container
+        .row.font-light
+          .col-xs-6
+            You are here:
+            %a(href) Home
+          .col-xs-6.text-right
+            .smile.align-middle.gutter-right
+              %a.header-link(href)
+                = icon :pencil
+                Sign Up
+              %a.header-link(href)
+                = icon :lock
+                Sign In
+            .smile.align-middle.gutter-horizontal-xs
+              %a.header-icon-link(href)= icon :question
+              %a.header-icon-link(href)= icon :exclamation
+              %a.header-icon-link(href)= icon :cog
+              %a.header-icon-link(href)= icon :speach
+            .smile.align-middle.block-4em.gutter-left
+              = image_tag "uk.svg", class: "cell-12"
+    %main.main
+      = yield
