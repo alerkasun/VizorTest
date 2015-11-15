@@ -491,3 +491,37 @@ Started GET "/assets/picture.png" for ::1 at 2015-11-15 23:10:41 +0200
 
 
 Started GET "/assets/Icomoon/icomoon.woff" for ::1 at 2015-11-15 23:10:41 +0200
+  [1m[36m (22.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (4.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-11-15 23:43:02 +0200
+Processing by PagesController#index as HTML
+  Rendered pages/_info.html.haml (140.9ms)
+  Rendered pages/index.html.haml within layouts/application (1553.2ms)
+Completed 200 OK in 1832ms (Views: 1812.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-15 23:43:04 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-15 23:43:04 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-15 23:43:04 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-15 23:43:04 +0200
+
+
+Started GET "/assets/uk.svg" for ::1 at 2015-11-15 23:43:04 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-15 23:43:04 +0200
+
+
+Started GET "/assets/picture.png" for ::1 at 2015-11-15 23:43:05 +0200
+
+
+Started GET "/assets/Icomoon/icomoon.woff" for ::1 at 2015-11-15 23:43:05 +0200
