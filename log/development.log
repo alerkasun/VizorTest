@@ -525,3 +525,41 @@ Started GET "/assets/picture.png" for ::1 at 2015-11-15 23:43:05 +0200
 
 
 Started GET "/assets/Icomoon/icomoon.woff" for ::1 at 2015-11-15 23:43:05 +0200
+
+
+Started GET "/" for ::1 at 2015-11-29 16:46:29 +0200
+Processing by PagesController#index as HTML
+  Rendered pages/_info.html.haml (15.9ms)
+  Rendered pages/index.html.haml within layouts/application (490.5ms)
+Completed 200 OK in 760ms (Views: 751.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-29 16:46:30 +0200
+Processing by PagesController#index as HTML
+  Rendered pages/_info.html.haml (1.6ms)
+  Rendered pages/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-29 16:46:30 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-29 16:46:30 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-29 16:46:30 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-29 16:46:30 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-29 16:46:30 +0200
+
+
+Started GET "/assets/uk.svg" for ::1 at 2015-11-29 16:46:30 +0200
+
+
+Started GET "/assets/Icomoon/icomoon.woff" for ::1 at 2015-11-29 16:46:31 +0200
+
+
+Started GET "/assets/picture.png" for ::1 at 2015-11-29 16:46:31 +0200
